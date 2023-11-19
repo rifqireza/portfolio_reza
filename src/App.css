@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@primary-color: #d42534;
+
+
+.ant-space-item {
+  min-height: 100vh;
+}
+
+.ant-layout {
+  min-height: 100vh;
+}

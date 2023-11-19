@@ -1,0 +1,9 @@
+@tailwind base;
+@layer base {
+  .my-login {
+    @apply w-screen h-screen flex justify-center items-center bg-slate-500
+  }
+  .login-button {
+    @apply rounded-md w-24 h-8 text-white font-bold
+  }
+}

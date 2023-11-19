@@ -1,0 +1,5 @@
+@layer base {
+  .aritmatika-page-layout {
+    @apply w-full h-fit bg-red-400
+  }
+}
