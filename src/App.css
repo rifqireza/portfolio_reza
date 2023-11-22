@@ -1,8 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@primary-color: #d42534;
+@primary-color: #1677ff;
 
+:where(.css-2i2tap).ant-space {
+  display: block;
+}
 
 .ant-space-item {
   min-height: 100vh;
@@ -11,3 +14,7 @@
 .ant-layout {
   min-height: 100vh;
 }
+
+/* button, [type='primary'] {
+  background-color: #1677ff !important;
+} */

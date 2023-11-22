@@ -1,0 +1,6 @@
+@tailwind base;
+@layer base {
+  .aritmatika-page-layout {
+    @apply w-full h-fit align-baseline p-5
+  }
+}

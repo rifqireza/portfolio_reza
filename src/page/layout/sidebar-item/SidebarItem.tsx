@@ -35,6 +35,11 @@ export default function SidebarItem() {
                 key: 'aritmatika',
                 label: 'Aritmatika',
                 onClick: () => navigate("/web/matrix/aritmethics")
+              },
+              {
+                key: 'determinan',
+                label: 'Determinan',
+                onClick: () => navigate("/web/matrix/determinan")
               }
             ]
           },

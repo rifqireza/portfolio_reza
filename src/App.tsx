@@ -6,6 +6,7 @@ import Aritmatika from "./page/layout/content/matriks/aritmatika/Aritmatika"
 import Login from "./page/auth/Login"
 import Register from "./page/auth/Register"
 import CreateUser from "./page/layout/content/crud/CreateUser"
+import DeterminanMatrix from "./page/layout/content/matriks/determinan/Determinan"
 console.log('sini');
 
 function App() {
@@ -16,8 +17,10 @@ function App() {
         <Route path="/web" element={<Navigate replace to="/web/dashboard" />} />
         <Route path="/web" element={<IndexLayout />}>
           <Route path="dashboard" element={<Dashboard name="Dashboard" />} />
-          <Route path="matrix/aritmethics" element={<Aritmatika />} />
           <Route path="users/create" element={<CreateUser />} />
+
+          <Route path="matrix/aritmethics" element={<Aritmatika />} />
+          <Route path="matrix/determinan" element={<DeterminanMatrix />} />
         </Route>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
