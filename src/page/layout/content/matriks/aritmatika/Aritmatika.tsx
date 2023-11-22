@@ -101,7 +101,7 @@ export default function AritmatikaMatrix() {
     }
   }
 
-  const onFieldsChange = (e: any) => {
+  const onFieldsChange = (_: any) => {
     const valueA = form.getFieldValue("dimension_a")
     const valueB = form.getFieldValue("dimension_b")
 

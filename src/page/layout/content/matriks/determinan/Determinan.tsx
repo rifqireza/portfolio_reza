@@ -10,7 +10,7 @@ import "./../Matrix.css"
 export default function DeterminanMatrix() {
   const [form] = useForm()
   const [format, setFormat] = useState([2, 2])
-  const [result, setResult] = useState<Matrix>([])
+  const [result, _] = useState<Matrix>([])
 
   const meta = {
     columns: 1,
@@ -58,7 +58,7 @@ export default function DeterminanMatrix() {
     }
   }
 
-  const onFieldsChange = (e: any) => {
+  const onFieldsChange = (_: any) => {
     const value = form.getFieldValue("dimension")
 
     if (value !== format) {
@@ -67,6 +67,7 @@ export default function DeterminanMatrix() {
   }
 
   const onFinish = (e: any) => {
+    console.log(e);
     
   }
 
@@ -79,7 +80,7 @@ export default function DeterminanMatrix() {
         size="large"
         labelAlign="left"
         form={form}
-        // onFinish={onFinish}
+        onFinish={onFinish}
         onFieldsChange={onFieldsChange}
       >
         <FormBuilder form={form} meta={meta} />
